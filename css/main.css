@@ -1,0 +1,272 @@
+/**************
+GENERAL UNIVERSAL
+********************/
+/* FONT fAMILY*Reset css default values*/
+html {
+  font-family: segoe print;
+  background: url(../squairy_light/squairy_light.png) repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+/* link and img colors | decorations*/
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+/**************
+      PARAGRAPHS AND LISTS
+      ********************/
+p {
+  color: #000;
+  min-height: 32px;
+  font-size: 1em;
+  padding: 1em;
+}
+
+/**************
+     HEADINGS 
+********************/
+h1, h2, h3 {
+  color: #000;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h1 {
+  font-size: 1em;
+  padding: 10px;
+}
+
+h2 {
+  font-size: .875em;
+  padding: 10px;
+}
+
+h3 {
+  font-size: .875em;
+  padding: 10px;
+}
+
+/**************
+    HEADER 
+********************/
+header {
+  float: left;
+  margin-bottom: 20px;
+  padding: 5px 0 0 0;
+  width: 100%;
+  margin: 0;
+}
+
+h1.heading {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2.heading {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h3.heading {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* header | footer colors - decorations*/
+header, footer {
+  background: #7233de;
+  border-bottom: 5px solid #8b57e5;
+  margin-bottom: 20px;
+}
+
+ /************************
+FOOTER
+*************************/
+footer {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  clear: both;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+footer a img.social-icon {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+footer#site-seal, footer h3 {
+  display: block;
+}
+
+/**************
+    NAVIGATION - MENU
+********************/
+nav[role="small_screen"] {
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+}
+nav[role="small_screen"] nav ul {
+  margin: 0 auto;
+}
+nav[role="small_screen"] ul li {
+  position: relative;
+  display: inline-block;
+  min-width: 12.6%;
+  padding: 3em .5em 0 .5em;
+  margin: .5em 0 .5em .25em;
+  clear: both;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  font-size: .675em;
+  background-color: transparent;
+  transition-duration: .8s;
+  transition-timing-function: ease-in-out;
+  transition-property: background, color, padding, border-radius;
+}
+nav[role="small_screen"] ul li a.selected {
+  background-color: #a982ed;
+  border-radius: .75em;
+}
+nav[role="small_screen"] ul li:hover {
+  background-color: #a982ed;
+  border-radius: .75em;
+  padding-left: 2em;
+}
+nav[role="small_screen"] ul li:hover a {
+  color: #000;
+}
+nav[role="small_screen"] ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: color .5s ease-in-out;
+}
+
+/**************
+Body id="wrapper"
+********************/
+body#wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*******************************
+PAGE - Profile Home Gallery INDEX - Page *
+************************************/
+section#gallery {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  clear: both;
+  font-size: .875em;
+}
+
+section#gallery ul li {
+  display: block;
+  margin: 10px 5% 10px 5%;
+  width: 100%;
+  text-align: left;
+  background-image: url("../img/Treehouse.jpg");
+}
+
+  /************************
+GALLERY PAGE  |   CONTACT PAGE
+*************************/
+section#gallery ul li, ul.contact-info li {
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+  min-height: 40px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  padding: 0 0 0 55px;
+}
+
+ /************************
+CONTACT PAGE
+*************************/
+section#contact-primary, section#contact-secondary {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding-left: 4.6%;
+  padding-right: 4.6%;
+  clear: both;
+}
+
+section#contact-primary p {
+  display: inline-block;
+  margin: 0 auto;
+  padding-left: 4.6%;
+  padding-right: 4.6%;
+}
+
+.contact-info li.phone {
+  background-image: url("../img/phone.png");
+}
+
+.contact-info li.mail {
+  background-image: url("../img/mail.png");
+}
+
+.contact-info li.twitter {
+  background-image: url("../img/twitter.png");
+}
+
+/************************
+      ABOUT PAGE
+*************************/
+section#about-primary, section#about-secondary {
+  display: block;
+  width: 100%;
+  margin: 0 2.5%;
+}
+
+section#about-primary h3, section#about-secondary h3 {
+  text-align: center;
+}
+
+section#about-primary p, section#about-secondary p {
+  width: 100%;
+  margin: 0 2.5%;
+  padding-bottom: 10px;
+  clear: both;
+}
+
+img#profile-photo, img#interest-photo {
+  float: left;
+  width: 165px;
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 20%;
+  padding: 10px;
+}
+
+/************************
+      WELLNESS PAGE
+*************************/
+section #wellness {
+  font-size: 1.5em;
+  width: 100%;
+  text-align: center;
+}
