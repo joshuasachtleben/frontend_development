@@ -1,13 +1,69 @@
+@charset "UTF-8";
 /**************
 GENERAL UNIVERSAL
 ********************/
+/* font-family: 'Raleway', sans-serif;*/
+/* font-family: 'Merriweather', serif;*/
+/*font-family: 'Raleway Dots', cursive;*/
 /* FONT fAMILY*Reset css default values*/
+/*@media only screen and (max-width: 480px) { … } /* Narrow */
+/*@media only screen and (min-width: 481px) and (max-width: 960px) { … } /* Medium */
+/*@media only screen and (min-width: 961px) { … } /* Wide */
 html {
-  font-family: segoe print;
+  font-size: 1em;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
   background: url(../squairy_light/squairy_light.png) repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+nav ul li {
+  font-size: .875em;
+}
+
+section.gallery ul li {
+  font-family: 'Merriweather', serif;
+  font-size: .875em;
+}
+
+p {
+  margin: .5%;
+  padding: 2%;
+  font-size: .875em;
+}
+
+h1, h2, h3, h4 {
+  font-weight: inherit;
+  padding: 1% 0;
+  margin: 1% 0;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  font-size: 1.3993em;
+  font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+  font-family: 'Raleway Dots';
+  color: blue;
+  font-size: .97951em;
+}
+
+h4 {
+  font-size: .685657em;
 }
 
 /* link and img colors | decorations*/
@@ -21,76 +77,40 @@ img {
 }
 
 /**************
-      PARAGRAPHS AND LISTS
-      ********************/
-p {
-  color: #000;
-  min-height: 32px;
-  font-size: 1em;
-  padding: 1em;
-}
-
-/**************
-     HEADINGS 
-********************/
-h1, h2, h3 {
-  color: #000;
-  font-weight: normal;
-  line-height: 0.8em;
+        HEADER 
+    ********************/
+header {
+  display: block;
+  text-align: center;
+  margin: .5% auto;
+  padding: 15px 0 0 0;
+  width: 100%;
+  height: auto;
+  margin-top: 2.5%;
 }
 
 h1 {
-  font-size: 1em;
-  padding: 10px;
+  display: block;
+  min-width: 100%;
+  margin: 0 auto;
 }
 
 h2 {
-  font-size: .875em;
-  padding: 10px;
+  display: block;
+  min-width: 100%;
+  margin: 0 auto;
 }
 
 h3 {
-  font-size: .875em;
-  padding: 10px;
-}
-
-/**************
-    HEADER 
-********************/
-header {
-  float: left;
-  margin-bottom: 20px;
-  padding: 5px 0 0 0;
-  width: 100%;
-  margin: 0;
-}
-
-h1.heading {
   display: block;
   width: 100%;
   margin: 0 auto;
-  text-align: center;
-}
-
-h2.heading {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-h3.heading {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
 }
 
 /* header | footer colors - decorations*/
 header, footer {
   background: #7233de;
-  border-bottom: 5px solid #8b57e5;
-  margin-bottom: 20px;
+  border-bottom: 10px solid #8b57e5;
 }
 
  /************************
@@ -100,129 +120,136 @@ footer {
   width: 100%;
   height: auto;
   text-align: center;
-  clear: both;
-  padding-top: 10px;
-  margin-top: 10px;
+  padding-top: 15px;
+  margin-top: 2.5%;
 }
 
 footer a img.social-icon {
   display: inline-block;
-  height: 30px;
-  width: 30px;
-  margin: 0 5px;
-  padding: 5px;
+  max-height: 30px;
+  max-width: 30px;
+  margin: 0 .5%;
+  padding-top: 15px;
 }
 
-footer#site-seal, footer h3 {
+footer h3 {
   display: block;
+  margin: 0 auto;
+}
+
+p#valid-css, span#site-seal {
+  display: inline-block;
+  width: 30%;
+  max-height: 79px;
+  padding: 0;
+  margin: 0 auto;
+  align-content: space-between;
 }
 
 /**************
-    NAVIGATION - MENU
+NAVIGATION - MENU
 ********************/
-nav[role="small_screen"] {
-  width: 100%;
-  margin: 0 auto;
-  clear: both;
+nav ul {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
 }
-nav[role="small_screen"] nav ul {
-  margin: 0 auto;
-}
-nav[role="small_screen"] ul li {
-  position: relative;
-  display: inline-block;
-  min-width: 12.6%;
-  padding: 3em .5em 0 .5em;
-  margin: .5em 0 .5em .25em;
-  clear: both;
-  text-transform: uppercase;
-  cursor: pointer;
+nav ul li {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 15px .5%;
+  margin: 0;
   text-align: center;
-  font-size: .675em;
+  cursor: pointer;
   background-color: transparent;
   transition-duration: .8s;
   transition-timing-function: ease-in-out;
   transition-property: background, color, padding, border-radius;
 }
-nav[role="small_screen"] ul li a.selected {
+nav ul li a.selected {
   background-color: #a982ed;
-  border-radius: .75em;
+  border-radius: .75%;
 }
-nav[role="small_screen"] ul li:hover {
+nav ul li:hover {
   background-color: #a982ed;
-  border-radius: .75em;
-  padding-left: 2em;
+  border-radius: .75%;
+  padding-left: .5%;
 }
-nav[role="small_screen"] ul li:hover a {
+nav ul li:hover a {
   color: #000;
 }
-nav[role="small_screen"] ul li a {
+nav ul li a {
   color: #000;
   text-decoration: none;
   transition: color .5s ease-in-out;
 }
 
-/**************
-Body id="wrapper"
-********************/
-body#wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0;
-}
-
 /*******************************
-PAGE - Profile Home Gallery INDEX - Page *
+ Gallery INDEX - Page *
 ************************************/
-section#gallery {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  clear: both;
-  font-size: .875em;
+section.gallery ul {
+  display: -webkit-flex;
+  display: -ms-webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-bottom: 2px dotted black;
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif;
+  max-width: 250px;
+  margin: .5em auto;
 }
 
-section#gallery ul li {
-  display: block;
-  margin: 10px 5% 10px 5%;
-  width: 100%;
-  text-align: left;
+section.gallery ul li {
   background-image: url("../img/Treehouse.jpg");
-}
-
-  /************************
-GALLERY PAGE  |   CONTACT PAGE
-*************************/
-section#gallery ul li, ul.contact-info li {
   text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  min-height: 40px;
+  color: #333;
   background-repeat: no-repeat;
-  background-size: 40px 40px;
-  padding: 0 0 0 55px;
+  background-size: 30px;
+  padding: 10px 10px 10px 70px;
+  align-self: stretch;
 }
 
  /************************
-CONTACT PAGE
+CONTACT PAGE - use mult-column properties
 *************************/
-section#contact-primary, section#contact-secondary {
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding-left: 4.6%;
-  padding-right: 4.6%;
-  clear: both;
+#contact-primary, #contact-secondary {
+  -webkit-columns: 270px 2;
+  -moz-columns: 270px 2;
+  columns: 270px 2;
+  -webkit-column-gap: 3em;
+  -moz-column-gap: 3em;
+  column-gap: 3em;
+  -webkit-column-rule: 2px dotted #070641;
+  -moz-column-rule: 2px dotted #070641;
+  column-rule: 2px dotted #070641;
+}
+#contact-primary h3, #contact-secondary h3 {
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
+  text-align: center;
 }
 
-section#contact-primary p {
-  display: inline-block;
-  margin: 0 auto;
-  padding-left: 4.6%;
-  padding-right: 4.6%;
+ul.contact-info li {
+  background-size: 40px;
+  background-repeat: no-repeat;
+  padding: 10px 0 10px 60px;
 }
 
-.contact-info li.phone {
+ul.contact-info li.phone {
   background-image: url("../img/phone.png");
 }
 
@@ -235,38 +262,50 @@ section#contact-primary p {
 }
 
 /************************
-      ABOUT PAGE
+      ABOUT PAGE use mulit-column properties
 *************************/
-section#about-primary, section#about-secondary {
-  display: block;
-  width: 100%;
-  margin: 0 2.5%;
+section#about-primary {
+  -webkit-columns: 200px 3;
+  -moz-columns: 200px 3;
+  columns: 200px 3;
+  -webkit-column-gap: 3em;
+  -moz-column-gap: 3em;
+  column-gap: 3em;
+  -webkit-column-rule: 2px dotted #070641;
+  -moz-column-rule: 2px dotted #070641;
+  column-rule: 2px dotted #070641;
 }
-
-section#about-primary h3, section#about-secondary h3 {
+section#about-primary h1, section#about-primary h2, section#about-primary h3 {
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
   text-align: center;
 }
 
-section#about-primary p, section#about-secondary p {
-  width: 100%;
-  margin: 0 2.5%;
-  padding-bottom: 10px;
-  clear: both;
+img {
+  display: block;
+  margin: 0 1em .5em 1em;
+  max-width: 98%;
+  height: auto;
 }
 
-img#profile-photo, img#interest-photo {
-  float: left;
-  width: 165px;
-  border-bottom-left-radius: 20%;
-  border-top-right-radius: 20%;
-  padding: 10px;
-}
-
-/************************
+ /************************
       WELLNESS PAGE
 *************************/
-section #wellness {
-  font-size: 1.5em;
-  width: 100%;
+section#wellness {
+  -webkit-columns: 200px 3;
+  -moz-columns: 200px 3;
+  columns: 200px 3;
+  -webkit-column-gap: 3em;
+  -moz-column-gap: 3em;
+  column-gap: 3em;
+  -webkit-column-rule: 2px dotted #070641;
+  -moz-column-rule: 2px dotted #070641;
+  column-rule: 2px dotted #070641;
+}
+section#wellness h2 {
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
   text-align: center;
 }
