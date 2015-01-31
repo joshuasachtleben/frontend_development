@@ -58,7 +58,7 @@ h2 {
 
 h3 {
   font-family: 'Raleway Dots';
-  color: blue;
+  color: #318;
   font-size: .97951em;
 }
 
@@ -107,6 +107,11 @@ h3 {
   margin: 0 auto;
 }
 
+img#interest-photo {
+  max-width: 25%;
+  float: right;
+}
+
 /* header | footer colors - decorations*/
 header, footer {
   background: #7233de;
@@ -149,6 +154,10 @@ p#valid-css, span#site-seal {
 /**************
 NAVIGATION - MENU
 ********************/
+nav {
+  clear: both;
+}
+
 nav ul {
   display: -webkit-flex;
   display: -ms-flex;
@@ -158,6 +167,10 @@ nav ul {
   justify-content: space-between;
   font-family: 'Raleway', sans-serif;
 }
+nav ul li.selected {
+  background-color: #a982ed;
+  border-radius: .75%;
+}
 nav ul li {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -166,17 +179,15 @@ nav ul li {
   margin: 0;
   text-align: center;
   cursor: pointer;
-  background-color: transparent;
+  background-color: silver;
+  border-right: 5px solid #318;
+  border-top-left-radius: 45%;
   transition-duration: .8s;
   transition-timing-function: ease-in-out;
   transition-property: background, color, padding, border-radius;
 }
-nav ul li a.selected {
-  background-color: #a982ed;
-  border-radius: .75%;
-}
 nav ul li:hover {
-  background-color: #a982ed;
+  background-color: transparent;
   border-radius: .75%;
   padding-left: .5%;
 }
@@ -303,9 +314,13 @@ section#wellness {
   -moz-column-rule: 2px dotted #070641;
   column-rule: 2px dotted #070641;
 }
-section#wellness h2 {
+section#wellness h2, section#wellness h3 {
   -webkit-column-span: all;
   -moz-column-span: all;
   column-span: all;
+  text-align: center;
+}
+
+h3.wellness-blog {
   text-align: center;
 }

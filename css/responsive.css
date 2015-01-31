@@ -24,6 +24,11 @@
     font-size: .88837em;
   }
 
+  img#interest-photo {
+    max-width: 15%;
+    margin-right: 5%;
+  }
+
   p {
     font-size: 1em;
   }
@@ -42,6 +47,7 @@
 
   section.gallery ul {
     display: -webkit-inline-flex;
+    display: -ms-inline-flex;
     display: inline-flex;
     min-width: 35%;
     border: none;
@@ -50,5 +56,14 @@
   section.gallery ul li {
     align-self: stretch;
     text-align: justify;
+  }
+
+               /************************
+|  Contact PAGE 
+*************************/
+  #contact-primary, #contact-secondary {
+    -webkit-columns: 150px 2;
+    -moz-columns: 150px 2;
+    columns: 150px 2;
   }
 }
