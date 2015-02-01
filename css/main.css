@@ -33,6 +33,7 @@ body {
   margin: 0 auto;
   padding: 0;
   background: url(../squairy_light/squairy_light.png) repeat;
+  background-image: radial-gradient(circle, silver, green);
   font-family: 'Merriweather', serif;
   font-weight: 400;
   line-height: 1.45;
@@ -129,8 +130,15 @@ img#interest-photo {
 
 /* header | footer colors - decorations*/
 header, footer {
-  background: #7233de;
   border-bottom: 10px solid #8b57e5;
+}
+
+header {
+  background-image: linear-gradient(45deg, #7233de, silver);
+}
+
+footer {
+  background-image: linear-gradient(180deg, #7233de, silver);
 }
 
  /************************
@@ -190,7 +198,7 @@ nav ul li {
   margin: 0;
   text-align: center;
   cursor: pointer;
-  background-color: silver;
+  background: url(../squairy_light/squairy_light.png) repeat;
   border-right: 5px solid #318;
   border-top-left-radius: 45%;
   transition-duration: .8s;
