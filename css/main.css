@@ -348,3 +348,7 @@ section#wellness h2, section#wellness h3 {
 h3.wellness-blog {
   text-align: center;
 }
+
+img#juiceplus {
+  border-radius: 50%;
+}
