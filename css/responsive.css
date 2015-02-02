@@ -4,7 +4,7 @@
 /************************
         MEDIA QUERY MIN-WIDTH 600PX
   *************************/
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
   h1 {
     margin-top: 0;
     font-size: 2.2em;

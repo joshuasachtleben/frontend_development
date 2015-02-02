@@ -33,6 +33,7 @@ body {
   margin: 0 auto;
   padding: 0;
   background: radial-gradient(silver, forestgreen, slateblue, transparent 100%), url(../squairy_light/squairy_light.png) repeat;
+  background-size: cover;
   font-family: 'Merriweather', serif;
   font-weight: 400;
   line-height: 1.45;
@@ -129,19 +130,20 @@ img#interest-photo {
 }
 
 /* header | footer colors - background -transitions decorations*/
-header, footer {
-  border-bottom: 10px solid #8b57e5;
+footer {
+  background: linear-gradient(to top, silver, #7233de, transparent 100%), url(../squairy_light/squairy_light.png) repeat;
+  background-size: cover;
+  -webkit-box-shadow: 10px 10px 10px 6px #333;
+  -moz-box-shadow: 10px 10px 10px 6px #333;
+  box-shadow: 10px 10px 10px 6px #333;
 }
 
 header {
-  /*background: radial-gradient(silver, forestgreen, slateblue, transparent 100%),
-   url(../squairy_light/squairy_light.png) repeat;*/
   background: linear-gradient(silver, #7233de, transparent 10%), url(../img/Machu_Picchu.jpg) no-repeat;
   background-size: cover;
-}
-
-footer {
-  background-image: linear-gradient(45deg, silver, #7233de);
+  -webkit-box-shadow: 10px 10px 10px 6px #333;
+  -moz-box-shadow: 10px 10px 10px 6px #333;
+  box-shadow: 10px 10px 10px 6px #333;
 }
 
  /************************
