@@ -7,22 +7,22 @@ Hint. Use loops and if/else statments. In javascript the % is the modulo, or rem
 
 console.log("Before");
 
- 
 for (var counter = 100; counter >= 1; counter = counter - 1) {
-    if (counter % 3 == 0) {
-        console.log("fizz");
-    }
-        
-    if (counter % 5 == 0) {
-        console.log("buzz");
-    }
     if (counter % 5 == 0 && counter % 3 == 0) {
         console.log("fizzbuzz");
     }
+    
+    else if (counter % 3 == 0) {
+        console.log("fizz");
+    }
+        
+    else if (counter % 5 == 0) {
+        console.log("buzz");
+    }
+   
     else {
         console.log(counter);
     }
-    
 } 
 console.log("After");
 
